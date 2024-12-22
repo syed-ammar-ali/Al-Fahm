@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ammar" />
+    <meta
+      name="description"
+      content="Premium coconut coals for hookah, crafted for a perfect burn and flavor."
+    />
+    <meta
+      name="keywords"
+      content="hookah, coconut coal, premium coal, Al Fahm"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Al Fahm" />
+    <meta
+      property="og:description"
+      content="Premium coconut coals for hookah, crafted for a perfect burn and flavor."
+    />
+    <meta
+      property="og:image"
+      content="https://example.com/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Al Fahm" />
+    <meta
+      name="twitter:description"
+      content="Premium coconut coals for hookah, crafted for a perfect burn and flavor."
+    />
+    <meta
+      name="twitter:image"
+      content="https://example.com/images/og-image.jpg"
+    />
+
+    <!-- Page Title -->
+    <title>Al Fahm</title>
+
+    <!-- Preconnect for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icon Fonts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="relative h-screen bg-[url('/static/photo.jpg')] bg-cover bg-center"
+    >
+      <!-- Header with Navbar -->
+      <header
+        class="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black to-transparent px-12 pt-2"
+      >
+        <nav
+          class="flex items-center justify-between"
+          aria-label="Main Navigation"
+        >
+          <!-- Logo -->
+          <a href="#home">
+            <img
+              class="w-12 h-12 scale-150"
+              src="/static/image.png"
+              alt="Company Logo"
+              aria-label="Company Logo"
+              loading="lazy"
+            />
+          </a>
+          <!-- Navigation Links -->
+          <ul class="text-white text-xl flex gap-8">
+            <li>
+              <a href="#products" class="hover:text-yellow-400">Products</a>
+            </li>
+            <li>
+              <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+            </li>
+            <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Content -->
+      <main
+        id="home"
+        class="h-full px-12 flex flex-col text-center text-white"
+        aria-labelledby="hero-heading"
+      >
+        <!-- Top Half (Heading and Description) -->
+        <div class="flex flex-col justify-end items-center h-1/2 p-4">
+          <!-- yellow-400 Heading -->
+          <h1 id="hero-heading" class="text-9xl tracking-wide font-bold mb-2">
+            AL FAHM
+          </h1>
+          <p class="text-2xl tracking-wide">
+            Enhance your hookah experience with our premium coals, crafted for
+            the perfect burn and flavor.
+          </p>
+        </div>
+
+        <!-- Bottom Half (Contact Information) -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-center h-1/2 p-4"
+        >
+          <!-- Email Button -->
+          <a
+            href="mailto:example@email.com"
+            class="w-full md:w-1/2 h-20 flex items-center justify-start border border-white p-4 text-white font-light text-xl transition hover:bg-white hover:text-black"
+          >
+            example@email.com
+          </a>
+          <!-- Phone Button -->
+          <a
+            href="tel:+1234567890"
+            class="w-full md:w-1/2 h-20 flex items-center justify-start border border-white p-4 text-white font-light text-xl transition hover:bg-white hover:text-black"
+          >
+            +123 456 7890
+          </a>
+        </div>
+      </main>
+
+      <!-- Bottom Gradient Overlay -->
+      <footer
+        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent"
+      ></footer>
+    </section>
+
+    <section
+      id="products"
+      class="bg-black w-full h-screen flex flex-col items-center justify-start"
+      aria-labelledby="catalog-heading"
+    >
+      <!-- Section Header -->
+      <header class="text-white tracking-wide text-7xl font-bold mb-12">
+        <h2 id="catalog-heading">Catalog</h2>
+      </header>
+
+      <!-- Product Cards Container -->
+      <div
+        class="relative w-full px-4 md:px-12 flex justify-center items-center gap-8"
+      >
+        <!-- 250g Product Card -->
+        <article
+          class="hidden lg:flex product-card absolute w-[25rem] h-[30rem] flex-col items-end border border-white overflow-hidden left-0 md:left-[12%] transform translate-y-[-5%] z-0"
+          aria-label="250g Coconut Coal Product"
+        >
+          <img
+            src="/static/1.jpg"
+            alt="Coconut coal product weighing 250 grams"
+            loading="lazy"
+            class="w-full h-[90%] object-cover"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-[90%] bg-black bg-opacity-50 flex items-center justify-center"
+          >
+            <div class="updown flex flex-col items-center">
+              <span class="text-white tracking-wide text-7xl font-semibold"
+                >Coming</span
+              >
+              <span class="text-white tracking-wide text-7xl font-semibold"
+                >Soon</span
+              >
+            </div>
+          </div>
+          <footer
+            class="product-info w-full h-[10%] flex items-center justify-center gap-4 text-white p-2"
+          >
+            <div class="flex items-center gap-2">
+              <i class="ri-arrow-right-wide-line"></i>
+              <h3
+                class="text-lg md:text-xl tracking-wide font-light text-yellow-400"
+              >
+                Coconut Coal
+              </h3>
+            </div>
+            <h5 class="text-lg md:text-xl tracking-wide font-medium">(250g)</h5>
+          </footer>
+        </article>
+
+        <!-- 500g Product Card -->
+        <article
+          class="hidden lg:flex product-card absolute w-[25rem] h-[30rem] flex-col items-end border border-white overflow-hidden right-0 md:right-[12%] transform translate-y-[-5%] z-0"
+          aria-label="500g Coconut Coal Product"
+        >
+          <img
+            src="/static/1.jpg"
+            alt="Coconut coal product weighing 500 grams"
+            loading="lazy"
+            class="w-full h-[90%] object-cover"
+          />
+          <div
+            class="absolute top-0 left-0 w-full h-[90%] bg-black bg-opacity-50 flex items-center justify-center"
+          >
+            <div class="updown flex flex-col items-center">
+              <span class="text-white tracking-wide text-7xl font-semibold"
+                >Coming</span
+              >
+              <span class="text-white tracking-wide text-7xl font-semibold"
+                >Soon</span
+              >
+            </div>
+          </div>
+          <footer
+            class="product-info w-full h-[10%] flex items-center justify-center gap-4 text-white p-2"
+          >
+            <div class="flex items-center gap-2">
+              <i class="ri-arrow-right-wide-line"></i>
+              <h3
+                class="text-lg md:text-xl tracking-wide font-light text-yellow-400"
+              >
+                Coconut Coal
+              </h3>
+            </div>
+            <h5 class="text-lg md:text-xl tracking-wide font-medium">(500g)</h5>
+          </footer>
+        </article>
+
+        <!-- 1kg Product Card (Main) -->
+        <article
+          class="product-card relative w-[25rem] h-[30rem] flex flex-col items-end shadow-lg border border-white z-10 group overflow-hidden transform translate-y-[10%] transition-transform duration-300 hover:scale-105"
+          aria-label="1kg Coconut Coal Product"
+        >
+          <img
+            src="/static/1.jpg"
+            alt="Coconut coal product weighing 1 kilogram"
+            loading="lazy"
+            class="w-full h-[90%] object-cover"
+          />
+          <footer
+            class="product-info w-full h-[10%] flex items-center justify-center gap-4 text-white p-2"
+          >
+            <div class="flex items-center gap-2">
+              <i class="ri-arrow-right-wide-line"></i>
+              <h3
+                class="text-lg md:text-xl tracking-wide font-light text-yellow-400"
+              >
+                Coconut Coal
+              </h3>
+            </div>
+            <h5 class="text-lg md:text-xl tracking-wide font-medium">(1kg)</h5>
+          </footer>
+          <div
+            class="absolute top-0 left-[-100%] w-full h-[90%] bg-black bg-opacity-75 text-white flex flex-col justify-start items-start p-6 transition-all duration-500 ease-in-out group-hover:left-0"
+          >
+            <h5
+              class="text-lg md:text-xl font-semibold px-4 tracking-wide mb-2"
+            >
+              Benefits
+            </h5>
+            <p class="text-sm tracking-wide md:text-lg px-4 mb-2">
+              <span class="text-yellow-400">Pure Coconut Coals</span> crafted
+              from 100% natural shells deliver a
+              <span class="text-yellow-400">clean burn</span> with minimal
+              residue for a premium flavor experience.
+            </p>
+            <p class="text-sm md:text-lg px-4 mb-2">
+              <span class="text-yellow-400">Quick-Light Technology</span>
+              ensures <span class="text-yellow-400">effortless ignition</span>,
+              making setup fast and hassle-free.
+            </p>
+            <p class="text-sm md:text-lg px-4 tracking-wide mb-2">
+              <span class="text-yellow-400">Extended Heat</span> performance
+              provides
+              <span class="text-yellow-400">consistent warmth</span> and flavor,
+              perfect for long-lasting sessions.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="bg-black py-16">
+      <div class="container mx-auto px-6 lg:px-16">
+        <!-- Gallery Heading -->
+        <h2
+          class="text-white text-7xl tracking-wide md:text-7xl font-bold text-center pt-10 mb-12"
+        >
+          The Raw Experience
+        </h2>
+
+        <!-- Gallery Rows -->
+        <div class="space-y-8">
+          <!-- Row 1 -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Portrait Video (Left) -->
+            <div
+              class="border border-white overflow-hidden bg-gray-800 aspect-[3/4]"
+            >
+              <video
+                class="w-full h-full object-cover"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source src="/static/v1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Landscape Photo (Right) -->
+            <div
+              class="lg:col-span-2 border border-white overflow-hidden bg-gray-700 aspect-video"
+            >
+              <img
+                src="/static/g2.png"
+                alt="Landscape Placeholder"
+                loading="lazy"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Row 2 (Equal Columns) -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Portrait Video 1 -->
+            <div
+              class="border border-white overflow-hidden bg-gray-800 aspect-[3/4]"
+            >
+              <video
+                class="w-full h-full object-cover"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source src="/static/v2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Portrait Video 2 -->
+            <div
+              class="border border-white overflow-hidden bg-gray-800 aspect-[3/4]"
+            >
+              <video
+                class="w-full h-full object-cover"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source src="/static/v3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Portrait Video 3 -->
+            <div
+              class="border border-white overflow-hidden bg-gray-800 aspect-[3/4]"
+            >
+              <video
+                class="w-full h-full object-cover"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source src="/static/v4.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Portrait Image -->
+            <div
+              class="border border-white overflow-hidden bg-gray-800 aspect-[3/4]"
+            >
+              <img
+                class="w-full h-full object-cover"
+                loading="lazy"
+                src="/static/g1.png"
+                alt="Portrait Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-black">
+      <div class="container mx-auto px-10 lg:px-16">
+        <!-- Team Section -->
+        <div class="relative flex flex-col items-center space-y-8">
+          <!-- Team Member Image -->
+          <figure
+            class="relative w-[20rem] h-[20rem] rounded-full border border-white overflow-hidden shadow-lg"
+            aria-labelledby="team-member-name"
+          >
+            <img
+              src="/static/ja.jpeg"
+              alt="Jibran Ali, Founder and CEO of Al Fahm"
+              loading="lazy"
+              class="w-full h-full object-cover object-top"
+            />
+          </figure>
+
+          <!-- Team Member Info -->
+          <div class="pb-6 text-center shadow-md max-w-xl">
+            <h3
+              id="team-member-name"
+              class="text-5xl md:text-7xl tracking-wide font-bold text-yellow-400"
+            >
+              Jibran Ali
+            </h3>
+            <p class="text-xl md:text-2xl tracking-wide text-white mt-2">
+              Founder & CEO
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black h-16">
+      <div class="border-t border-b border-white py-4">
+        <div
+          class="footer bg-black text-white px-6 lg:px-16 flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0"
+        >
+          <!-- Left Section (Copyright) -->
+          <p class="text-sm text-center tracking-wide lg:text-left">
+            &copy; 2024 Al Fahm. All rights reserved.
+          </p>
+
+          <!-- Right Section (Made by Ammar) -->
+          <p class="text-sm text-center lg:text-right">
+            Made by
+            <a
+              href="mailto:syedammarali12a@gmail.com"
+              class="text-white hover:text-yellow-400 transition duration-300"
+            >
+              <span class="hover:text-yellow-400 tracking-wide">Ammar</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
